@@ -77,6 +77,7 @@ $(document).ready(function(){
         })
     },500)
 
+    RastgeleEmoji.html(Emojiler[0]);
     //Sol alttaki emojinin üstüne gelince emojiyi rastgele bir emoji ile değiştiriyoruz
     RastgeleEmoji.mouseover(function(){
         let RastgeleID = Math.floor(Math.random() * Emojiler.length);
