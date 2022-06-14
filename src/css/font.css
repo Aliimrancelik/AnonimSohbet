@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('PlusJakartaSans-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('PlusJakartaSans-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('PlusJakartaSans-Medium.ttf') format('truetype');
+}

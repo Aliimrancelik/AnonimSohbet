@@ -1,0 +1,281 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+input{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.mainYukleyici{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 999;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+}
+.mainYukleyici h1{
+    margin-top: 40vh;
+}
+.mainYukleyici.kapali{
+    display: none;
+}
+.mainIlk{
+    padding-top: 30vh;
+    display: block;
+    background: #f7f7f7;
+    width: 600px;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+.mainIlk.kapali{
+    display: none;
+}
+.mainIlk .HosgeldinBaslik{
+    text-align: center;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.65);
+}
+.mainIlk .KullaniciAdiBelirleKutu{
+    text-align: center;
+    margin-top: 30px;
+}
+.mainIlk .KullaniciAdiBelirleKutu .KullaniciAdiBelirleButon{
+    width: 42px;
+    height: 42px;
+    border-top-right-radius: 42px;
+    border-bottom-right-radius: 42px;
+    background: #c4ff9d;
+    color: rgba(0, 0, 0, 0.5);
+    border: 0;
+    margin: 0;
+    cursor: pointer;
+    display: absolute;
+    margin-left: -100px;
+    width: 100px;
+}
+.mainIlk .KullaniciAdiBelirleKutu .KullaniciAdiBelirleButon:active{
+    background: #9adf6d;
+}
+.mainIlk .KullaniciAdiBelirleKutu input{
+    height: 40px;
+    border: 0;
+    width: 400px;
+    border-radius: 20px;
+    padding: 0 20px;
+    border: 1px solid #c2c2c265;
+    text-align: left;
+}
+.mainIlk .KullaniciAdiBelirleKutu.kirmizi input{
+    border-color: #ff353565;
+}
+.mainIlk .KullaniciAdiBelirleKutu .KullaniciAdiBelirleMesaj{
+    display: none;
+}
+.mainIlk .KullaniciAdiBelirleKutu.kirmizi .KullaniciAdiBelirleMesaj{
+    display: block;
+}
+.mainIlk .KullaniciAdiBelirleKutu input:focus{
+    outline: none;
+}
+.mainIlk .AktifSayisiKutu{
+    text-align: center;
+    margin-top: 30px;
+}
+.AktifSayisiYesil{
+    background-color: #72e663;
+    box-shadow: 0px 0px 30px 7px rgba(114,230,99,1);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.mainSohbet{
+    display: block;
+    background: white;
+}
+.mainSohbet.kapali{
+    display: none;
+}
+.mainSohbet .SohbetPenceresi{
+    width: 600px;
+    max-width: 600px;
+    background: #f7f7f7;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.mainSohbet .SohbetPenceresi .KullaniciBilgisi{
+    width: 600px;
+    height: 3.9vh;
+    line-height: 2.9vh;
+    padding: 0.5vh 0;
+    text-align: center;
+    border-bottom: 0.1vh solid #c2c2c241;
+}
+.KullaniciBilgisiTuruncu{
+    background-color: #e6c763;
+    box-shadow: 0px 0px 30px 7px rgba(230, 199, 99,1);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+.mainSohbet .SohbetPenceresi .SohbetGeriDon{
+    display: block;
+    position: absolute;
+    top: 90vh;
+    left: 150px;
+    height: 5vh;
+    line-height: 3vh;
+    padding: 1vh;
+    cursor: pointer;
+    z-index: 1;
+}
+.mainSohbet .SohbetPenceresi .SohbetGeriDonButon{
+    width: 300px;
+    height: 3vh;
+    line-height: 3vh;
+    text-align: center;
+    border: 1px solid #c2c2c265;
+    background: #9dffea9f;
+    cursor: pointer;
+}
+.mainSohbet .SohbetPenceresi .SohbetGeriDon.kapali{
+    display: none;
+}
+.mainSohbet .SohbetPenceresi .SohbetBolumu{
+    min-height: 90vh;
+    height: 90vh;
+    max-height: 90vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: white;
+}
+.mainSohbet .SohbetPenceresi .SohbetBolumu::-webkit-scrollbar{
+    width: 0;
+}
+.mainSohbet .SohbetPenceresi .SohbetBolumu .SohbetMesaji{
+    position: relative;
+    overflow:hidden;
+    display: block;
+    margin-bottom: 2vh;
+    width: 600px
+}
+.mainSohbet .SohbetPenceresi .SohbetBolumu .SohbetMesaji__Yollayan{
+    text-align: left;
+    font-weight: 500;
+    width: 580px;
+    padding: 0 10px;
+}
+.mainSohbet .SohbetPenceresi .SohbetBolumu .SohbetMesaji.Ben  .SohbetMesaji__Yollayan{
+    text-align: left;
+}
+.mainSohbet .SohbetPenceresi .SohbetBolumu .SohbetMesaji.Diger  .SohbetMesaji__Yollayan{
+    text-align: right;
+}
+.mainSohbet .SohbetPenceresi .SohbetBolumu .SohbetMesaji.Ben .SohbetMesaji__MesajKutusu{
+    float: left;
+    background: #c4ff9d3f;
+    border: 1px solid #c4ff9d59;
+}
+.mainSohbet .SohbetPenceresi .SohbetBolumu .SohbetMesaji.Diger .SohbetMesaji__MesajKutusu{
+    float: left;
+    margin-left: 100px;
+    background: #9dd8ff3f;
+    border: 1px solid #9dd8ff59;
+}
+.mainSohbet .SohbetPenceresi .SohbetBolumu .SohbetMesaji__MesajKutusu{
+    margin-left: 10px;
+    width: 468px;
+    margin-top: 10px;
+    padding: 10px;
+    background: #ffffff3f;
+    border: 1px solid #ffffff59;
+}
+.mainSohbet .SohbetPenceresi .MesajBolumu{
+    border-top: 0.1vh solid #c2c2c241;
+    line-height: 5vh;
+    height: 5vh;
+    position: relative;
+}
+.mainSohbet .SohbetPenceresi .MesajBolumu .EmojiListesi{
+    width: 6%;
+    display: inline-block;
+    float: left;
+    user-select: none;
+    cursor: pointer;
+    overflow: auto;
+    text-align: center;
+}
+.EmojiListesi #RastgeleEmoji{
+    display: block;
+    width: 100%;
+}
+.mainSohbet .SohbetPenceresi .MesajBolumu #MesajGonderInput{
+    display: inline-block;
+    float: left;
+    height: 5vh;
+    width: 75%;
+    border: 0;
+    outline: 0;
+    background: #f7f7f7;
+    margin: 0 2.5% 0 0;
+}
+.mainSohbet .SohbetPenceresi .MesajBolumu #MesajGonderInput:focus{
+    outline: 0;
+}
+.mainSohbet .SohbetPenceresi .MesajBolumu .MesajAktifSayisi{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 2.5%;
+}
+.EmojiListesi .EmojiKutusu{
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    margin-top: -301px;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 0px 3px 1px rgb(202, 202, 202);
+    cursor: default;
+    overflow-y: scroll;
+    font-size: 25px;
+    text-align: center;
+    z-index: 999;
+    display: none;
+}
+.EmojiListesi .EmojiKutusu::-webkit-scrollbar{
+    width: 0;
+}
+.EmojiListesi .EmojiKutusu .Emoji{
+    display: inline-block;
+    float: left;
+    width: 20%;
+    height: 45px;
+    cursor: pointer;
+}
+.EmojiListesi .EmojiKutusu .Emoji:hover{
+    background: #ebebeb;
+}
+#EmojiKapat{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: #f7f7f7;
+    display: none;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anonim sohbet programı</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Tamamen anonim olarak sohbet edin.">
+        <meta name="author" content="A.İ.Ç">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./src/js/socket.js"></script>
+        <script src="./src/app.js"></script>
+        <link href="./src/app.css" rel="stylesheet">
+        <link href="./src/css/font.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="mainYukleyici" id="mainYukleyici"><h1 id="YukleyiciBaslik">Yükleniyor...</h1><img src="./src/resimler/yukleyici.gif"></div>
+        <div class="mainIlk " id="KullaniciAdiEkrani">
+            <h1 class="HosgeldinBaslik">Anonim sohbete katılmak için bir kullanıcı adı belirle!</h1>
+            <div class="KullaniciAdiBelirleKutu" id="KullaniciAdiBelirleKutu">
+                <label class="KullaniciAdiBelirleMesaj" id="KullaniciAdiBelirleMesaj"></label>
+                <input type="text" id="KullaniciAdiInput" placeholder="Kullanıcı adınız... [3-30]" maxlength="30">
+                <button type="button" class="KullaniciAdiBelirleButon" id="KullaniciAdiBelirleButon"><i class="fa-solid fa-check"></i> Oluştur</button>
+            </div>
+            <div class="AktifSayisiKutu">
+                <span class="AktifSayisiYesil"></span> <span class="AktifSayisi">0</span> aktif
+            </div>
+        </div>
+        <div class="mainSohbet kapali" id="SohbetEkrani">
+            <div id="EmojiKapat"></div>
+            <div class="SohbetPenceresi">
+                <div class="SohbetGeriDon kapali" id="SohbetGeriDon"><button class="SohbetGeriDonButon">Canlı sohbete geri dön</button></div>
+                <div class="KullaniciBilgisi">
+                    <span class="KullaniciBilgisiTuruncu"></span> <span id="KullaniciAdi"></span>
+                </div>
+                <div class="SohbetBolumu" id="SohbetBolumu">
+                </div>
+                <div class="MesajBolumu">
+                    <div class="EmojiListesi" id="EmojiListesi"><span id="RastgeleEmoji">😀</span><div class="EmojiKutusu" id="EmojiKutusu"></div></div>
+                    <input type="text" id="MesajGonderInput" maxlength="400" placeholder="Mesajınızı yazınız... [Maks: 400 karakter]">
+                    <div class="MesajAktifSayisi"><span class="AktifSayisiYesil"></span> <span class="AktifSayisi">0</span> aktif</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
