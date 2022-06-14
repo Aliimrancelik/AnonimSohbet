@@ -1,6 +1,6 @@
-Anonim sohbet programı
+ANONİM SOHBET PROGRAMI
 
-Kullanıcıların birbiri ile anonim bir şekilde sohbet edebileceği uygulamadır.
+Kullanıcıların birbiri ile anonim bir şekilde sohbet edebileceği uygulamadır. Ve ayrıca "Görsel Programlama" dersinin Final Projesi için yazılmıştır.
 
 server.js hakkında
 
@@ -25,3 +25,16 @@ Bu kısımda arayüzün tasarım işlemlerini yaptım. Tasarım responsive bir �
 src/css, src/js, src/resimler hakkında
 
 Burada "jQuery, FontAwesome, Google Fonts..." gibi ekstra kaynakları dışa bağlı kalmamak için barındırıyorum. Cihazın internet bağlantısı olmasa bile uygulamamız yerel ağımızda sorunsuz çalışacaktır.
+
+Genel özellikler
+
+- Uygulama tamamen anonim şekilde çalışmaya programlandı. Kullanıcının ip, mac adresi, cihaz bilgileri gibi şeyler kesinlikle kaydedilmedi.
+- Uygulamanın içerik yüklemesi ve sunucu bağlantısı yapılırken kullanılması için yükleyici kullanıldı.
+- Uygulamanın kullanıcı arayüzündeki tasarımda sadelik esas alındı..
+- Kullanıcı arayüzü dinamik bir şekilde yazıldı. Herhangi bir sayfa yenilemesi kullanılmadı.
+- Uygulamada veri kaybı minimize edilmeye çalışıldı. Eklenen kütüphaneler minimize edilmiş bir şekilde eklenildi.
+- Gösterilen sohbet limiti eklendi. Örneğin 100 mesaj limiti koydum, arayüzde görülen mesaj miktarı 100ü aşarsa en eski mesajlardan silmeye başlıyor. Bu da sayfa belleğinin minimize edilmesine dair bir plandı.
+- Kullanıcıya kolaylık olması açısından geliştirmeler yapıldı. Örneğin kullanıcı adı yazıldığında entere basmak yeterli oluyor. Butona basmak için efor sarfetmeye gerek kalmıyor.
+- Aynı şekilde kullanıcıya kolaylık olması için sayfa yukarıya doğru yani mesaj geçmişine kaydırıldığında sohbetin kaydırılması durduruldu. Bu sayede mesaj geçmişi okunurken yeni mesaj gelince sayfa aşşağı doğru kaymıyor. Kullanıcı mesaj geçmişini yakalayabiliyor. Fakat mesajlar aşşağı eklenmeye devam ediliyor. Bu durumda mesaj kutusunun üstünde "Canlı sohbete geri dön" buton çıkıyor ve basıldığında otomatik bir şekilde kaydırılmaya devam ediliyor. Ve eğer isterse sayfayı en aşşağı kaydırdığında canlı sohbete kaldığı yerden dönebiliyor.
+- Yeni mesaj geldiğinde sayfanın animasyonlu bir şekilde en aşşağı kaydırılması sağlandı. Kullanıcıya hoş bir arayüz sunulmaya çalışıldı.
+- Anlık aktif sayısı kullanıldı. Bu sayede kullanıcı tek başına konuşmaya çalışmayacak!
